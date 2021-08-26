@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+*.Rproj
 phd-metrics-fall-2021.Rproj
 ProblemSets/PS1-julia-intro/PS1solutions.jl
 ProblemSets/PS1-julia-intro/Cmatrix.csv
