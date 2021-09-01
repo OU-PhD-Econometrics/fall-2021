@@ -25,7 +25,7 @@ BibOptions(check.entries = FALSE,
            style = "markdown",
            hyperlink = FALSE,
            dashed = TRUE)
-biblio <- ReadBib("../../References/References.bib", check = FALSE)
+biblio <- ReadBib("../../References/References.bib", check = "error")
 ```
 
 # Plan for the Day
@@ -383,7 +383,7 @@ where $\tilde{P}$ is the recoded probability and $\eta_{i1}$ is the difference i
 ```{julia,eval=F}
 using DataFrames, HTTP, CSV, GLM, QuantileRegressions
 
-url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/LectureNotes/11-SubjExp/SCEmobilityExample.csv"
+url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/11-SubjExp/SCEmobilityExample.csv"
 df = CSV.read(HTTP.get(url).body)
 
 println(head(df))

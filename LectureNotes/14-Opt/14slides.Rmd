@@ -180,7 +180,7 @@ biblio <- ReadBib("../../References/References.bib", check = FALSE)
 using JuMP, Ipopt, Optim, LineSearches, LinearAlgebra, SparseArrays, Distributions, DataFrames, CSV, HTTP
 
 # Let's read in the data from PS8
-url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/ProblemSets/PS8-factor/nlsy.csv"
+url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2021/master/ProblemSets/PS8-factor/nlsy.csv"
 df = CSV.read(HTTP.get(url).body)
 X = [df.black df.hispanic df.female df.schoolt df.gradHS df.grad4yr ones(size(df,1),1)]
 y = df.logwage
@@ -575,7 +575,7 @@ results.se_optim_cns2   = vcat(θ̂_mle_optim_ad_se,missing)
     return β,se,ℓ,g
 end
 
-url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/ProblemSets/PS4-mixture/nlsw88t.csv"
+url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2021/master/ProblemSets/PS4-mixture/nlsw88t.csv"
 dff = CSV.read(HTTP.get(url).body)
 XX  = [dff.age dff.white dff.collgrad]
 ZZ  = cat(dff.elnwage1, dff.elnwage2, dff.elnwage3, dff.elnwage4,

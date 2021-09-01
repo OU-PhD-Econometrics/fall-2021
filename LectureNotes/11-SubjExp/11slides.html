@@ -4,6 +4,7 @@
     <title>Lecture 11</title>
     <meta charset="utf-8" />
     <meta name="author" content="Tyler Ransom" />
+    <script src="11slides_files/header-attrs-2.10/header-attrs.js"></script>
     <link href="11slides_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="11slides_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
     <link href="11slides_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
@@ -395,7 +396,7 @@ Klaauw (2020)
 ```julia
 using DataFrames, HTTP, CSV, GLM, QuantileRegressions
 
-url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/LectureNotes/11-SubjExp/SCEmobilityExample.csv"
+url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/11-SubjExp/SCEmobilityExample.csv"
 df = CSV.read(HTTP.get(url).body)
 
 println(head(df))
@@ -448,12 +449,12 @@ moved                0.5  -2.57907    0.0253557   -101.715
 ---
 # References
 .tiny[
-Beggs, S. D, N. S. Cardell, and J. Hausman (1981). "Assessing the
+Beggs, S. D., N. S. Cardell, and J. Hausman (1981). "Assessing the
 Potential Demand for Electric Cars". In: _Journal of Econometrics_
 17.1, pp. 1-19. DOI:
 [10.1016/0304-4076(81)90056-7](https://doi.org/10.1016%2F0304-4076%2881%2990056-7).
 
-Blass, A. A, S. Lach, and C. F. Manski (2010). "Using Elicited Choice
+Blass, A. A., S. Lach, and C. F. Manski (2010). "Using Elicited Choice
 Probabilities to Estimate Random Utility Models: Preferences for
 Electricity Reliability". In: _International Economic Review_ 51.2, pp.
 421-440. DOI:

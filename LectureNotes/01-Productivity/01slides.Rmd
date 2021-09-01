@@ -205,7 +205,7 @@ date to ensure the paper is appropriate for a presentation
 
 # Slides
 
-All slides will be available on the [course GitHub page](https://github.com/OU-PhD-Econometrics/fall-2020)
+All slides will be available on the [course GitHub page](https://github.com/OU-PhD-Econometrics/fall-2021)
 
 --
 
@@ -278,7 +278,7 @@ println("β-hat is $(round(bbeta_hat[1],digits=3)) and the true β is $(round(bb
 
 # More about Julia
 
-- There is a [separate slide deck](https://raw.githack.com/OU-PhD-Econometrics/fall-2020/master/LectureNotes/00-JuliaTips/00slides.html#1) for your reference
+- There is a [separate slide deck](https://raw.githack.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/00-JuliaTips/00slides.html#1) for your reference
 
 - This explains more about how to use Julia
 
@@ -457,9 +457,9 @@ There are four main git operations:
 
 # Activity: Forking the class repository
 
-- After signing up for a GitHub account, go to the class [repository](https://github.com/OU-PhD-Econometrics/fall-2020) and click `Fork` in the top-righthand corner
+- After signing up for a GitHub account, go to the class [repository](https://github.com/OU-PhD-Econometrics/fall-2021) and click `Fork` in the top-righthand corner
 
-- Once you do this, you should be able to visit https://github.com/your-username/fall-2020 and see an exact copy of all of the files
+- Once you do this, you should be able to visit https://github.com/your-username/fall-2021 and see an exact copy of all of the files
 
 ---
 
