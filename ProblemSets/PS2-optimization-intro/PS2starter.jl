@@ -15,7 +15,7 @@ using DataFrames
 using CSV
 using HTTP
 url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/ProblemSets/PS1-julia-intro/nlsw88.csv"
-df = CSV.read(HTTP.get(url).body)
+df = CSV.read(HTTP.get(url).body, DataFrame)
 X = [ones(size(df,1),1) df.age df.race.==1 df.collgrad.==1]
 y = df.married.==1
 
