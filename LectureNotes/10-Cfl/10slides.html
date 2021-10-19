@@ -4,6 +4,7 @@
     <title>Lecture 10</title>
     <meta charset="utf-8" />
     <meta name="author" content="Tyler Ransom" />
+    <script src="10slides_files/header-attrs-2.10/header-attrs.js"></script>
     <link href="10slides_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="10slides_files/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
     <link href="10slides_files/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
@@ -342,8 +343,8 @@ This code comes from the first question of Problem Set 4:
 using Random, LinearAlgebra, Statistics, Optim, DataFrames, CSV, HTTP, GLM, ForwardDiff, FreqTables
 
 # read in data
-url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/ProblemSets/PS4-mixture/nlsw88t.csv"
-df = CSV.read(HTTP.get(url).body)
+url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2021/master/ProblemSets/PS4-mixture/nlsw88t.csv"
+df = CSV.read(HTTP.get(url).body,DataFrame)
 X = [df.age df.white df.collgrad]
 Z = hcat(df.elnwage1, df.elnwage2, df.elnwage3, df.elnwage4, 
          df.elnwage5, df.elnwage6, df.elnwage7, df.elnwage8)
@@ -529,7 +530,7 @@ Expected Earnings, Nonpecuniary Outcomes, and Financial Constraints".
 In: _Journal of Political Economy_ 127.5, pp. 2343-2393. DOI:
 [10.1086/701808](https://doi.org/10.1086%2F701808).
 
-Fu, C., N. Grau, and J. Rivera (2020). _Wandering Astray: Teenagersâ€™
+Fu, C., N. Grau, and J. Rivera (2020). _Wandering Astray: Teenagers'
 Choices of Schooling and Crime_. Working Paper. University of
 Wisconsin-Madison. URL:
 [https://www.ssc.wisc.edu/~cfu/wander.pdf](https://www.ssc.wisc.edu/~cfu/wander.pdf).

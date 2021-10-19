@@ -306,8 +306,8 @@ This code comes from the first question of Problem Set 4:
 using Random, LinearAlgebra, Statistics, Optim, DataFrames, CSV, HTTP, GLM, ForwardDiff, FreqTables
 
 # read in data
-url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2020/master/ProblemSets/PS4-mixture/nlsw88t.csv"
-df = CSV.read(HTTP.get(url).body)
+url = "https://raw.githubusercontent.com/OU-PhD-Econometrics/fall-2021/master/ProblemSets/PS4-mixture/nlsw88t.csv"
+df = CSV.read(HTTP.get(url).body,DataFrame)
 X = [df.age df.white df.collgrad]
 Z = hcat(df.elnwage1, df.elnwage2, df.elnwage3, df.elnwage4, 
          df.elnwage5, df.elnwage6, df.elnwage7, df.elnwage8)
