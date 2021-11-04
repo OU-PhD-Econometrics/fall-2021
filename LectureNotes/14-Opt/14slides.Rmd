@@ -630,6 +630,8 @@ dfr = DataFrame(β=β,se=se)
 
 - They show that MPEC converges about .hi[800x faster]
 
+- For a Julia implementation, see Florian Oswald's [repository](https://github.com/floswald/Zurcher.jl)
+
 ---
 # MPEC example: Cournot oligopoly
 
