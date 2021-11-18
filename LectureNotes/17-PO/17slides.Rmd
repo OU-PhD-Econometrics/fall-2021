@@ -299,13 +299,44 @@ Cov(Z,\eta D)&=\mathbb{E}(Z \eta D)\\
 
 
 ---
+# IV: Non-compliance in treatment
+
+- In most real-world cases, even the best RCT suffers from [non-compliance](https://egap.org/resource/10-things-to-know-about-the-local-average-treatment-effect/)
+
+- .hi[Non-compliance:] when a unit chooses a different treatment status than assigned
+
+- There are four types of units in the population:
+
+    1. Compliers (always receive treatment status they are assigned)
+    2. Always-takers (receive treatment regardless of assignment)
+    3. Defiers (always do opposite of what they are assigned)
+    4. Never-takers (never receive treatment regardless of assignment)
+
+- Typically, need IV to resolve non-compliance (can use assigned treatment status as an instrument for actual treatment status)
+
+- But this also requires additional assumptions
+
+---
+# ITT
+
+- If we ignore non-compliance, we get the .hi[intent to treat (ITT)]
+
+- $ITT = E[Y\vert \text{assigned treatment}] - E[Y\vert \text{assigned control}]$
+
+- Note that this might be different than $ATE = E[Y\vert D=1] - E[Y\vert D=0]$!
+
+- Can show that the $ATT$ is equal to the $ITT$ divided by the compliance rate
+
+- Can also show that $ATT = LATE$ when using assigned treatment status as the IV
+
+---
 # IV and Local Average Treatment Effects (LATE)
 
 - However, under an additional .hi[monotonicity] assumption, the IV identifies the LATE `r Citep(biblio,"imbensAngrist1994")`
 
-- Monotonicity assumption ( $Z$ binary): $D_{Z=1} \geq D_{Z=0}$ 
+- Monotonicity assumption (if $Z$ is binary): $D_{Z=1} \geq D_{Z=0}$, i.e. no defiers 
 
-- All individuals respond to a change in the instrument $Z$ in the same way (Only sufficient, `r Citep(biblio,"chaisemartin2017")`)
+- All individuals respond to a change in the instrument $Z$ in the same way (Only sufficient, see `r Citet(biblio,"chaisemartin2017")`)
 
 - Under the previous assumptions, we have: $$\widehat{\beta}_{IV} \overset{p}{\rightarrow} LATE=\mathbb{E}(Y_1 - Y_0|D_{0}=0, D_1=1)$$
 
