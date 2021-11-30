@@ -34,7 +34,7 @@ Full course syllabus is [here](https://raw.githack.com/OU-PhD-Econometrics/fall-
 | 26 | Thu Nov 18  | [Marginal and Distributional Treatment Effects](https://raw.githack.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/18-MTE/18slides.html) | Work on Referee Report & Presentation |  |
 | ---  | Tue Nov 23  | **No class**                 | | |
 | ---  | Thu Nov 25  | **No class** (Thanksgiving)  | | |
-| 27 | Tue Nov 30  | [Intro to Machine Learning](https://raw.githack.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/19-IntroML/19slides.html) | [James et al., section 2.1 (pp. 15-29)](https://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf) | [Reading Quiz](https://github.com/OU-PhD-Econometrics/fall-2021/blob/master/ReadingQuizzes/RQ14.md) |
+| 27 | Tue Nov 30  | [Intro to Machine Learning](https://raw.githack.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/19-IntroML/19slides.html) | [James et al., section 2.1 (pp. 15-29)](https://static1.squarespace.com/static/5ff2adbe3fe4fe33db902812/t/6009dd9fa7bc363aa822d2c7/1611259312432/ISLR+Seventh+Printing.pdf) | [Reading Quiz](https://github.com/OU-PhD-Econometrics/fall-2021/blob/master/ReadingQuizzes/RQ14.md) |
 | 28 | Thu Dec  2  | [Machine Learning for Causal Modeling](https://raw.githack.com/OU-PhD-Econometrics/fall-2021/master/LectureNotes/20-CausalML/20slides.html)  | | Work on Referee Report & Presentation |
 | 29 | Tue Dec  7  | Presentations or Time Series Intro (depending on time) | | Presentation  |
 | 30 | Thu Dec  9  | Presentations  | | Presentation, [Referee Report](https://github.com/OU-PhD-Econometrics/fall-2021/blob/master/OtherAssignments/RefereeReport.pdf)  |
