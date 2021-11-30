@@ -162,7 +162,7 @@ Econometrics and Machine Learning use different words for the same objects
 ---
 # The goal of machine learning
 
-Machine learning is all about automating two hand-in-hand processes:
+Machine learning is all about .hi[automating] two hand-in-hand processes:
 
 1. Model selection
 
@@ -181,7 +181,7 @@ Machine learning is all about automating two hand-in-hand processes:
 ---
 # Training, validation and test data
 
-- In econometrics, we typically use the entire data set for estimation
+- In econometrics, we typically select model by hand and use all data for estimation
 
 - In ML, we assess out-of-sample performance, so we should hold out some data
 
@@ -195,13 +195,15 @@ Machine learning is all about automating two hand-in-hand processes:
 
 - Division of training/validation/test sets should be .hi[random]
 
+    - subject to respecting whatever hierarchical structure might be in the data
+
 ---
 # Model complexity and the bias/variance tradeoff
 
 - There is a trade-off between bias and variance
 
 \begin{align*}
-\underbrace{\mathbb{E}\left(y-\hat{f}(x)\right)^2}_{\text{Expected }MSE\text{ in test set}} &= \underbrace{\mathbb{V}\left(\hat{f}(x)\right)}_{\text{Variance}} + \underbrace{\left[\text{Bias}\left(\hat{f}(x)\right)\right]^2}_{\text{Squared Bias}} + \underbrace{\mathbb{V}\left(\epsilon\right)}_{\text{Irreducible Error}}
+\underbrace{\mathbb{E}\left(y-\hat{f}(x)\right)^2}_{MSE\text{ in test set}} &= \underbrace{\mathbb{V}\left(\hat{f}(x)\right)}_{\text{Variance}} + \underbrace{\left[\text{Bias}\left(\hat{f}(x)\right)\right]^2}_{\text{Squared Bias}} + \underbrace{\mathbb{V}\left(\epsilon\right)}_{\text{Irreducible Error}}
 \end{align*}
 
 - A model with high .hi[bias] is a poor approximation of reality
@@ -234,6 +236,8 @@ Machine learning is all about automating two hand-in-hand processes:
     - goal is to not have a good "fit" by randomly guessing
     
     - so each potential metric penalizes random guessing
+    
+- See [Wikipedia page](https://en.wikipedia.org/wiki/Confusion_matrix) for "Confusion Matrix"
 
 ---
 # Different types of learning algorithms
@@ -274,7 +278,7 @@ Examples of supervised learning algorithms:
     - Can generalize to "forests" that average over many "trees"
 
 - Neural networks
-    - Model the human brain's system of axons and dendrites
+    - Model the human brain's system of connections between axons and dendrites
     - "Input layer" is the $X$'s, "Output layer" is $Y$
     - "Hidden layers" nonlinearly map the input and output layers
     - Mapping ends up looking like a logit of logit of logits
@@ -313,7 +317,7 @@ Examples of supervised learning algorithms:
 & \min_{C_1,\ldots,C_K} \sum_{k=1}^K \frac{1}{N_k}\sum_{i\in C_k}\sum_{\ell=1}^L\left(x_{i\ell}-\overline{x}_{\ell j}\right)^2 \\
 \end{align*}
 
-$N_k$ is the number of observations in cluster $k$, $L$ is number of $X$'s
+$N_k$ is the number of observations in cluster $k$, $L$ is number of $X$'s, $K$ is no. of clusters
     
 - Can choose other metrics besides Euclidean distance
 
@@ -346,7 +350,7 @@ $N_k$ is the number of observations in cluster $k$, $L$ is number of $X$'s
 
 - .hi[Regularization] is the way we penalize complexity
 
-- .hi[Cross-validation] is the way that we choose the optimal level of regularization
+- .hi[Cross-validation] is the way that we choose the optimal amount of regularization
 
 ---
 # How cross-validation works  `r Citep(biblio,"adams2018")`
