@@ -125,7 +125,7 @@ There are two main assumptions:
     - Especially if the choice dimension is much larger than work/not work?
 
 ---
-# `r Citet(biblio,"ransom2020")`
+# `r Citet(biblio,"ransom2021aes")`
 
 - Considers geographic heterogeneity in wage returns to college major
 
